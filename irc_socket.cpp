@@ -50,7 +50,7 @@ Network::IrcSocket::IrcSocket(void) : Socket() {
 int Network::IrcSocket::recv(std::string &data) {
 	//lets check the recv buffer, if we can return something
 	//from there, do so, otherwise try looking to recv something
-	int newline_loc = recv_buffer.find("\r\n");
+	size_t newline_loc = recv_buffer.find("\r\n");
 	if (std::string::npos == newline_loc) { //try looking at the sock
 		std::string buffer = "";
 		int size = Socket::recv(buffer);
