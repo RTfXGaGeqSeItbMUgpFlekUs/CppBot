@@ -24,7 +24,6 @@ THE SOFTWARE.
 #define NETWORK_UTILS_H
 
 #include <string>
-#include "defines.h"
 //Basic network utils, abstractions
 
 namespace Network {
