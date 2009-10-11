@@ -15,7 +15,14 @@ all: $(BIN)
 $(BIN): $(OBJS)
 	$(LD) $(LDFLAGS) -o $@ $(OBJS)
 
+dist:
+	-rm cppbot.tar.bz2
+	(cd ..; tar cjf cppbot.tar.bz2 cppbot; mv cppbot.tar.bz2 cppbot/)
+
 clean:
 	-rm -f *.o $(BIN)
 
-.PHONY: all clean
+dist-clean: clean
+	-rm cppbot.tar.bz2
+
+.PHONY: all dist clean
