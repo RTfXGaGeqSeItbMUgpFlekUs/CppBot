@@ -22,7 +22,7 @@ THE SOFTWARE.
 #include <iostream>
 #include <string>
 
-#include "socket.h"
+#include "irc_socket.h"
 #include "network_utils.h"
 
 using namespace Network;
@@ -30,7 +30,7 @@ using namespace std;
 int main() {
 //Lets see how hard it is to connect to eighthbit as a test of sockets...
 	cout << "Starting test of socket client functions..." << endl;
-	Socket *sock = new Socket;
+	IrcSocket *sock = new IrcSocket;
 	
 	//we have a socket, lets try to resolve eighthbit.
 	string bit_ip = "";
