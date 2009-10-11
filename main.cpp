@@ -6,7 +6,7 @@ int main(int argc, char *argv[])
 {
 	CBot cb;
 
-	cb.InitConnection("CBot2_s", "irc.eighthbit.net", "6667");
+	cb.InitConnection("CodePlusPlus", "irc.eighthbit.net", "6667");
 	printf("EOM\n");
 
 	return 0;

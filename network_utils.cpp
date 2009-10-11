@@ -20,7 +20,7 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
 */
 
-#include <network_utils.h>
+#include "network_utils.h"
 #ifdef WIN32
 	#include <winsock.h>
 

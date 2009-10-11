@@ -29,7 +29,7 @@ THE SOFTWARE.
 #include <winsock.h>
 #else
 #include <netinet/in.h>
-#include <socket.h>
+#include <sys/socket.h>
 #include <arpa/inet.h>
 #endif
 namespace Network {
