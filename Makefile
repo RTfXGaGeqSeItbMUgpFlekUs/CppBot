@@ -1,3 +1,4 @@
+TYPE= global
 DEPS= libnetwork sockettest cppbot
 
 include rules.mk

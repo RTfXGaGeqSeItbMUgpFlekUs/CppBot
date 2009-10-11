@@ -38,8 +38,10 @@ $(LIB): $(OBJS)
 	@echo "      CC $@"
 	@$(CXX) $(CXXFLAGS) -o $@ -c $<
 
+ifneq ($(TYPE),global)
 clean:
 	@echo "   CLEAN"
 	-@rm $(BIN) $(LIB) $(OBJS)
+endif
 
 .PHONY: all options clean
