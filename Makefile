@@ -1,5 +1,5 @@
 BIN = bot
-SRCS= main.cpp bot.cpp network_utils.cpp socket.cpp string_utils.cpp
+SRCS= main.cpp bot.cpp network_utils.cpp socket.cpp string_utils.cpp irc_socket.cpp
 OBJS= $(SRCS:.cpp=.o)
 
 CC= g++
