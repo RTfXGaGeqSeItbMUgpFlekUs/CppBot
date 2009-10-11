@@ -47,7 +47,7 @@ int main() {
 
 	string data = "";
 	string olddata = "";
-	int loc = string::npos;
+	size_t loc = string::npos;
 	while(1){
 		sock->recv(data);
 		data = olddata + data;
