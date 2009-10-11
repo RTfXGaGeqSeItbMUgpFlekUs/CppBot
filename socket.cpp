@@ -41,6 +41,8 @@ THE SOFTWARE.
 #include <cassert>
 #include <iostream>
 
+#include <cstdio>
+
 #define MAX_BUFFER_SIZE 512
 using namespace Network;
 
@@ -195,6 +197,8 @@ int Network::Socket::send(const std::string data) {
 			assert(0); //TODO
 		}
 	}
+
+	return 0;
 }
 
 int Network::Socket::recv(std::string &data) {

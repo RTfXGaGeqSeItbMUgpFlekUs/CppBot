@@ -36,4 +36,6 @@ int CBot::InitConnection(char const *nick, char const *server,
 		res->ai_protocol);
 
 	delete res;
+
+	return 0;
 }

@@ -1,15 +1,15 @@
 BIN = bot
-SRCS= main.cpp bot.cpp
-OBJS= $(SRCS:.c=.o)
+SRCS= main.cpp bot.cpp network_utils.cpp socket.cpp string_utils.cpp
+OBJS= $(SRCS:.cpp=.o)
 
 CC= g++
-CCFLAGS= -g -Wall -Iinclude -O0 -pipe
+CCFLAGS= -g -Wall -I. -O0 -pipe
 LD= g++
 LDFLAGS= -g $(LIBS)
 
 all: $(BIN)
 
-.c.o:
+%.o: %.cpp
 	$(CC) $(CCFLAGS) $(LIBS) -o $@ -c $<
 
 $(BIN): $(OBJS)
