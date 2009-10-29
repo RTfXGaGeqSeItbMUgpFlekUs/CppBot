@@ -21,7 +21,7 @@ THE SOFTWARE.
  */
 
 #ifndef IRC_SOCKET_H
-#define IRC_SOCKET
+#define IRC_SOCKET_H
 #include "socket.h"
 namespace Network {
 class IrcSocket : public Socket {
